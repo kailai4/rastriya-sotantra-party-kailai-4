@@ -1,0 +1,308 @@
+rsp-kailali4/
+│
+├── index.html
+├── about.html
+├── news.html
+├── development.html
+├── gallery.html
+├── complaint.html
+├── volunteer.html
+├── contact.html
+│
+├── css/
+│    └── style.css
+│
+├── js/
+│    └── main.js
+│
+└── assets/
+     ├── images/
+     └── videos/
+
+body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f5f5;}
+header {background:#0a3d62; color:white; text-align:center; padding:20px;}
+nav {background:#1e3799; text-align:center; padding:10px;}
+nav a {color:white; margin:10px; text-decoration:none; font-weight:bold;}
+nav a:hover {text-decoration:underline;}
+.hero {display:flex; flex-direction:column; align-items:center; padding:20px;}
+.hero img {max-width:300px; border-radius:10px;}
+.hero-text {text-align:center; margin-top:15px;}
+.btn {background:#27ae60; color:white; padding:10px 20px; border:none; border-radius:5px; text-decoration:none;}
+section {padding:20px;}
+.card {background:white; padding:15px; margin:15px 0; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+footer {background:#0a3d62; color:white; text-align:center; padding:15px;}
+input, textarea {width:100%; padding:10px; border-radius:5px; border:1px solid #ccc; margin-bottom:10px;}
+button {background:#27ae60; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const forms = document.querySelectorAll('form');
+  forms.forEach(form => {
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Your form has been submitted successfully!');
+      form.reset();
+    });
+  });
+});
+
+
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RSP Kailali-4</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<h1>RSP Kailali-4</h1>
+<p>जनताको आवाज, हाम्रो प्रतिबद्धता</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="news.html">News</a>
+<a href="development.html">Development Works</a>
+<a href="gallery.html">Gallery</a>
+<a href="complaint.html">Janata Ko Gunaaso</a>
+<a href="volunteer.html">Volunteer</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<section class="hero">
+<img src="assets/images/mp.jpg" alt="Mananiya Khem Raj Koirala">
+<div class="hero-text">
+<h2>Welcome to RSP Kailali-4 Digital Platform</h2>
+<p>जनताको समस्या सुन्ने, विकास देखाउने, र युवा सँग जोड्ने डिजिटल प्लेटफर्म</p>
+<a href="complaint.html" class="btn">Report Your Issue</a>
+</div>
+</section>
+
+<section class="latest-updates">
+<h2>Latest Updates</h2>
+<div class="card">
+<h3>Geta Medical College Project Ongoing</h3>
+<p>Status: 70% Complete</p>
+</div>
+<div class="card">
+<h3>Road Construction in Kailali-4</h3>
+<p>Status: 45% Complete</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 RSP Kailali-4 | All Rights Reserved</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About RSP Kailali-4</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header><h1>About RSP Kailali-4</h1></header>
+<nav>
+<a href="index.html">Home</a><a href="about.html">About</a><a href="news.html">News</a><a href="development.html">Development Works</a><a href="gallery.html">Gallery</a><a href="complaint.html">Janata Ko Gunaaso</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<div class="card"><h2>Mananiya Khem Raj Koirala</h2><p>Kailali-4 का सांसद, जनताको सेवा र विकास कार्यमा समर्पित।</p></div>
+<div class="card"><h2>Constituency Overview</h2><p>Kailali-4 मा शिक्षा, स्वास्थ्य, सडक, र पिउने पानी सुधारमा काम भइरहेको छ।</p></div>
+<div class="card"><h2>Vision & Mission</h2><p>सबै जनता संग प्रत्यक्ष जुडेर समृद्ध Kailali-4 निर्माण गर्ने।</p></div>
+</section>
+
+<footer><p>© 2026 RSP Kailali-4 | All Rights Reserved</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News & Updates</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Latest News & Updates</h1></header>
+<nav>
+<a href="index.html">Home</a><a href="about.html">About</a><a href="news.html">News</a><a href="development.html">Development Works</a><a href="gallery.html">Gallery</a><a href="complaint.html">Janata Ko Gunaaso</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<div class="card">
+<h3>Kailali-4 Road Construction Started</h3>
+<p>Update: 45% Complete</p>
+</div>
+<div class="card">
+<h3>New Health Center Opened in Kailali-4</h3>
+<p>Serving local communities from 2082 B.S.</p>
+</div>
+</section>
+
+<footer><p>© 2026 RSP Kailali-4 | All Rights Reserved</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Development Works</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Development Works Dashboard</h1></header>
+<nav>
+<a href="index.html">Home</a><a href="about.html">About</a><a href="news.html">News</a><a href="development.html">Development Works</a><a href="gallery.html">Gallery</a><a href="complaint.html">Janata Ko Gunaaso</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<div class="card">
+<h3>Geta Medical College</h3>
+<p>Budget: Rs. 10 Crore | Status: 70%</p>
+</div>
+<div class="card">
+<h3>Kailali-4 Road Project</h3>
+<p>Budget: Rs. 5 Crore | Status: 45%</p>
+</div>
+<div class="card">
+<h3>Drinking Water Supply</h3>
+<p>Budget: Rs. 2 Crore | Status: 60%</p>
+</div>
+</section>
+
+<footer><p>© 2026 RSP Kailali-4 | All Rights Reserved</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Gallery</h1></header>
+<nav>
+<a href="index.html">Home</a><a href="about.html">About</a><a href="news.html">News</a><a href="development.html">Development Works</a><a href="gallery.html">Gallery</a><a href="complaint.html">Janata Ko Gunaaso</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<div class="card"><h3>Photo 1</h3><img src="assets/images/photo1.jpg" alt="Photo1" style="width:100%;border-radius:10px;"></div>
+<div class="card"><h3>Photo 2</h3><img src="assets/images/photo2.jpg" alt="Photo2" style="width:100%;border-radius:10px;"></div>
+<div class="card"><h3>Video</h3><video src="assets/videos/event.mp4" controls style="width:100%;border-radius:10px;"></video></div>
+</section>
+
+<footer><p>© 2026 RSP Kailali-4 | All Rights Reserved</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Janata Ko Gunaaso</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>जनताको समस्या रिपोर्ट गर्नुहोस्</h1></header>
+<nav>
+<a href="index.html">Home</a><a href="about.html">About</a><a href="news.html">News</a><a href="development.html">Development Works</a><a href="gallery.html">Gallery</a><a href="complaint.html">Janata Ko Gunaaso</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<div class="card">
+<form>
+<input type="text" placeholder="तपाईंको नाम" required>
+<input type="text" placeholder="फोन / ठेगाना" required>
+<textarea placeholder="समस्या लेख्नुहोस्" required></textarea>
+<input type="file">
+<button type="submit">Submit</button>
+</form>
+</div>
+</section>
+
+<footer><p>© 2026 RSP Kailali-4 | All Rights Reserved</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer Join</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Join as Volunteer</h1></header>
+<nav>
+<a href="index.html">Home</a><a href="about.html">About</a><a href="news.html">News</a><a href="development.html">Development Works</a><a href="gallery.html">Gallery</a><a href="complaint.html">Janata Ko Gunaaso</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<div class="card">
+<form>
+<input type="text" placeholder="तपाईंको नाम" required>
+<input type="text" placeholder="फोन / ठेगाना" required>
+<textarea placeholder="Why you want to join?" required></textarea>
+<button type="submit">Join</button>
+</form>
+</div>
+</section>
+
+<footer><p>© 2026 RSP Kailali-4 | All Rights Reserved</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Contact RSP Kailali-4</h1></header>
+<nav>
+<a href="index.html">Home</a><a href="about.html">About</a><a href="news.html">News</a><a href="development.html">Development Works</a><a href="gallery.html">Gallery</a><a href="complaint.html">Janata Ko Gunaaso</a><a href="volunteer.html">Volunteer</a><a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<div class="card">
+<h3>Office Address</h3>
+<p>Pahad Road, Attariya, Kailali, Far-West Nepal</p>
+<h3>Phone / WhatsApp</h3>
+<p>091-551382</p>
+<h3>Map</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</section>
+
+<footer><p>© 2026 RSP Kailali-4 | All Rights Reserved</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
